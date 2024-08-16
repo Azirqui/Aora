@@ -6,7 +6,10 @@ import { icons } from "../../constants";
 import useAppwrite from "../../lib/useAppwrite";
 import { getUserPosts, signOut } from "../../lib/appwrite";
 import { useGlobalContext } from "../../context/GlobalProvider";
-import { EmptyState, InfoBox, VideoCard } from "../../components";
+import EmptyState from "../../components/EmptyState";
+import InfoBox from "../../components/";
+import VideoCard from "../../components/VideoCard";
+
 
 const Profile = () => {
   const { user, setUser, setIsLogged } = useGlobalContext();
